@@ -874,7 +874,7 @@ extern const NSTimeInterval XMPPStreamTimeoutNone;
  * This method is called after registration of a new user has successfully finished.
  * If registration fails for some reason, the xmppStream:didNotRegister: method will be called instead.
 **/
-- (void)xmppStreamDidRegister:(XMPPStream *)sender;
+- (void)xmppStream:(XMPPStream *)sender didRegister:(NSXMLElement *)response;
 
 /**
  * This method is called if registration fails.

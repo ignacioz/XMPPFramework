@@ -3549,8 +3549,7 @@ enum XMPPStreamConfig
 	{
 		// Revert back to connected state (from authenticating state)
 		state = STATE_XMPP_CONNECTED;
-		
-		[multicastDelegate xmppStreamDidRegister:self];
+        [multicastDelegate xmppStream:self didRegister:response];
 	}
 }
 
